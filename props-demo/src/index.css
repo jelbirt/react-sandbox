@@ -1,0 +1,10 @@
+.student{
+    font-family: Cambria, sans-serif;
+    font-size: 2em;
+    padding: 10px;
+    border: 1px solid hsla(0, 0%, 50%, 0.7);
+}
+
+.student p{
+    margin: 0;
+}
