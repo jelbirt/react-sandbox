@@ -1,15 +1,19 @@
 import React, { useState } from "react"
 
+// Use updater functions to force "updates" of variable values in memory, i.e. 
+// setCount(count+1); setCount(count+1) will not increase count by 2, but setCount(c=>c+1) etc...will
+// Using updater function assembles functions in a queue, forcing updating/sequential execution rather than batch
+
 function Counter() {
 
     const [count, setCount] = useState(0);
     
     const increment = () => {
-        setCount(count + 1);
+        setCount(c => c + 1);
     }
 
     const decrement = () => {
-        setCount(count - 1);
+        setCount(c => c - 1);
     }
 
     const reset = () => {
